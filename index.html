@@ -109,37 +109,6 @@
     .lang-switch:hover {
       background: rgba(255,255,255,0.1);
     }
-    @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-header img, header h1, header .lead, header div {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-header img {
-  animation-delay: 0.1s;
-}
-header h1 {
-  animation-delay: 0.3s;
-}
-header .lead:nth-of-type(1) {
-  animation-delay: 0.5s;
-}
-header .lead:nth-of-type(2) {
-  animation-delay: 0.7s;
-}
-header div {
-  animation-delay: 0.9s;
-}
   </style>
 </head>
 <body>
@@ -238,13 +207,5 @@ header div {
   <footer>
     © 2025 Nick Boot · Gebouwd met ❤️ voor GitHub Pages
   </footer>
-  <script>
-  // Small delay to ensure all elements are rendered before animation starts
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('header img, header h1, header .lead, header div').forEach(el => {
-      el.style.opacity = '1';
-    });
-  });
-</script>
 </body>
 </html>
