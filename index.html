@@ -1,106 +1,194 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nick — IT Projects & Playground</title>
-  <meta name="description" content="A quick intro and overview of Nick's projects" />
+  <title>Nick Boot — IT Specialist & Founder Luda-IT</title>
+  <meta name="description" content="Online CV van Nick Boot - IT Specialist uit Mierlo, gespecialiseerd in Azure, Unraid, automatisering en infrastructuur." />
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6bf;--accent:#60a5fa}
-    *{box-sizing:border-box}
-    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#071027 0%,#07172a 100%);color:#e6eef8;min-height:100vh}
-    .wrap{max-width:900px;margin:40px auto;padding:24px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    h1{font-size:1.9rem;margin:0}
-    p.lead{color:var(--muted);margin:6px 0 0}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    .muted{color:var(--muted);font-size:0.95rem}
-    ul.tech{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-    ul.tech li{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:0.85rem}
-    footer{margin-top:30px;color:var(--muted);font-size:0.9rem;text-align:center}
-    a.chip{display:inline-block;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.02);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03)}
-    .projects h3{margin:0 0 8px}
-    .contact{display:flex;gap:10px;flex-wrap:wrap}
-    @media (max-width:520px){.wrap{margin:18px;padding:16px}h1{font-size:1.5rem}}
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9da5b4;
+      --accent: #58a6ff;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(180deg, #111827 0%, #0d1117 100%);
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    h2 {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      color: var(--muted);
+    }
+    .job {
+      margin-bottom: 20px;
+    }
+    .job h3 {
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+    .job span {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    ul.skills li {
+      background: rgba(255,255,255,0.05);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <div>
-        <h1>👋 Hey, I'm Nick</h1>
-        <p class="lead">IT specialist — automation, servers, Home Assistant & more.</p>
-      </div>
-      <div style="text-align:right">
-        <a class="chip" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
-        <a class="chip" href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </header>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/59101602?v=4" alt="Nick Boot profielfoto" />
+    <h1>Nick Boot</h1>
+    <p class="lead">Service Delivery Engineer @ DLL | Founder van Luda-IT</p>
+    <p class="lead">Mierlo, Noord-Brabant · <a href="mailto:nickboot@outlook.com">nickboot@outlook.com</a></p>
+    <div>
+      <a href="https://linkedin.com/in/nick-boot-93317464" target="_blank">LinkedIn</a> · 
+      <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+    </div>
+  </header>
 
-    <section class="grid">
-      <article class="card">
-        <h2 style="margin:0 0 8px">🚀 Projects</h2>
-        <div class="projects">
-          <div style="margin-bottom:10px">
-            <h3>🧠 Home Automation</h3>
-            <p class="muted">Complex Home Assistant automations for lighting, Plex integrations, MQTT buttons and more.</p>
-          </div>
-
-          <div style="margin-bottom:10px">
-            <h3>💻 Infrastructure</h3>
-            <p class="muted">Unraid server running 80+ Docker containers, Azure tooling, VLAN & network setups with Ubiquiti.</p>
-          </div>
-
-          <div>
-            <h3>📦 Dev & Ops</h3>
-            <p class="muted">Scripts for secret management, GitHub Actions, and monitoring with Acknowledge Proactive Monitoring (APM).</p>
-          </div>
-        </div>
-      </article>
-
-      <aside class="card">
-        <h2 style="margin:0 0 8px">🧩 Tech stack</h2>
-        <p class="muted">Languages, platforms and tools I use daily:</p>
-        <ul class="tech">
-          <li>PowerShell</li>
-          <li>Python</li>
-          <li>Bash</li>
-          <li>YAML</li>
-          <li>Azure</li>
-          <li>Unraid</li>
-          <li>Docker</li>
-          <li>Ubiquiti</li>
-        </ul>
-
-        <div style="margin-top:12px">
-          <strong>VLAN plan (short):</strong>
-          <p class="muted" style="margin:6px 0 0">Infrastructure, Users, Docker, Printers, HomeAssistant, IoT, Cameras, VMs, Guests.</p>
-        </div>
-      </aside>
-
-      <section class="card">
-        <h2 style="margin:0 0 8px">📫 Contact</h2>
-        <p class="muted">Want to collaborate or check something out? Reach me:</p>
-        <div class="contact" style="margin-top:10px">
-          <a class="chip" href="mailto:your.email@example.com">Email</a>
-          <a class="chip" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
-          <a class="chip" href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <p class="muted" style="margin-top:12px">Optional: replace contact links above with real addresses in the file before publishing.</p>
-      </section>
-
-      <article class="card">
-        <h2 style="margin:0 0 8px">📄 About</h2>
-        <p class="muted">I love tinkering with servers, networking and automation. This page is a simple portfolio and project index — perfect for GitHub Pages (drop as <code>index.html</code>).</p>
-        <p style="margin-top:10px;">Want it as a blog or using a theme? I can generate a Jekyll/Minimal Mistakes or plain HTML template next.</p>
-      </article>
+  <main>
+    <section>
+      <h2>💡 Over mij</h2>
+      <p>Ik ben Nick, een IT-specialist uit Mierlo met een passie voor techniek, automatisering en slimme oplossingen. Al sinds jonge leeftijd ben ik gefascineerd door technologie — van het bouwen van mijn eigen thuisserver tot het inrichten van geavanceerde netwerken en automatiseringen met tools als <strong>Home Assistant</strong>, <strong>Unraid</strong>, <strong>VMware</strong> en <strong>Unifi</strong>.</p>
+      <p>Met jarenlange ervaring in systeembeheer, Azure-omgevingen en complexe infrastructuren help ik organisaties hun IT stabieler, efficiënter en toekomstbestendig te maken. Ik combineer analytisch inzicht met praktische oplossingen, zodat techniek organisaties écht vooruit helpt.</p>
     </section>
 
-    <footer>
-      Built with ❤️ — Drop this file as <code>index.html</code> in your repo's root or the <code>gh-pages</code> branch.
-    </footer>
+    <section>
+      <h2>🧑‍💼 Ervaring</h2>
+      <div class="job">
+        <h3>DLL – Service Delivery Engineer | Governance & Infrastructure</h3>
+        <span>2025 – heden · Eindhoven</span>
+        <p>Beheer en optimalisatie van de IT-infrastructuur met focus op stabiliteit, kwaliteit en security.</p>
+      </div>
+
+      <div class="job">
+        <h3>Scholt Energy – Specialist System Engineer</h3>
+        <span>2024 – 2025 · Valkenswaard</span>
+        <p>Project engineer voor security, networking en infrastructuur. Werkzaam via Luda-IT.</p>
+      </div>
+
+      <div class="job">
+        <h3>Luda-IT – Founder</h3>
+        <span>2021 – heden</span>
+        <p>Eigen IT-bedrijf gericht op consultancy, netwerkbeheer, automatisering en cloudoplossingen.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🧰 Vaardigheden</h2>
+      <ul class="skills">
+        <li>Microsoft Azure</li>
+        <li>Microsoft Intune</li>
+        <li>Veeam</li>
+        <li>Unraid</li>
+        <li>Docker</li>
+        <li>VMware</li>
+        <li>Networking</li>
+        <li>PowerShell</li>
+        <li>Automation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎓 Opleiding</h2>
+      <div class="job">
+        <h3>ROC Ter AA Opleidingen – MBO Niveau 4 ICT Beheer</h3>
+        <span>2009 – 2013</span>
+      </div>
+      <div class="job">
+        <h3>Vakcollege Helmond – VMBO-K Metaal & Elektro</h3>
+        <span>2009</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>🏅 Certificeringen</h2>
+      <ul class="skills">
+        <li>MCSE: Cloud Platform and Infrastructure</li>
+        <li>Microsoft Certified Professional</li>
+        <li>Certified Solidworks Professional</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌍 Talen</h2>
+      <div class="info-grid">
+        <p><strong>Nederlands:</strong> Moedertaal</p>
+        <p><strong>Engels:</strong> Professioneel werkvaardig</p>
+        <p><strong>Duits:</strong> Basiskennis</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🏊‍♂️ In mijn vrije tijd</h2>
+      <p>In mijn vrije tijd zwem ik fanatiek, fiets en wandel ik regelmatig, en werk ik graag aan technische projecten. Daarnaast geniet ik van tijd met mijn gezin — mijn vrouw en twee jongens — waarmee ik graag leuke dingen onderneem buiten alle bits en bytes.</p>
+    </section>
   </main>
+
+  <footer>
+    © 2025 Nick Boot · Gebouwd met ❤️ voor GitHub Pages
+  </footer>
 </body>
 </html>
