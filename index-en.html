@@ -210,7 +210,10 @@
   </main>
 
   <footer>
-    © 2025 Nick Boot · Built with ❤️ for GitHub Pages
+    © <span id="year"></span> Nick Boot · Gebouwd met ❤️ voor GitHub Pages
   </footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
