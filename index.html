@@ -172,7 +172,7 @@
       <a href="https://linkedin.com/in/nick-boot-93317464" target="_blank" data-umami-event="linkedin-click">LinkedIn</a> · 
       <a href="https://github.com/NickBootOne" target="_blank" data-umami-event="github-click">GitHub</a>
     </div>
-    <button class="print-btn" onclick="window.print()" data-umami-event="print-pdf">
+    <button class="print-btn" onclick="printCV()" data-umami-event="print-pdf">
       🖨️ Download als PDF
     </button>
   </header>
@@ -264,7 +264,16 @@
     © <span id="year"></span> Nick Boot · Gebouwd met ❤️ voor GitHub Pages
   </footer>
 <script>
+// Footer year
   document.getElementById("year").textContent = new Date().getFullYear();
+
+// Print CV with automatic filename
+  function printCV() {
+    const originalTitle = document.title;
+    document.title = "Nick_Boot_CV_NL";
+    window.print();
+    document.title = originalTitle;
+  }
 </script>
 </body>
 </html>
