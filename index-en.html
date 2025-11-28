@@ -128,6 +128,30 @@
     .lang-switch:hover {
       background: rgba(255,255,255,0.1);
     }
+   .print-btn {
+     margin-top: 20px;
+     background: rgba(255,255,255,0.08);
+     border: 1px solid rgba(255,255,255,0.2);
+     color: var(--fg);
+     padding: 8px 16px;
+     border-radius: 8px;
+     font-size: 0.9rem;
+     cursor: pointer;
+   }
+   .print-btn:hover {
+     background: rgba(255,255,255,0.15);
+   }
+   @media print {
+     .print-btn,
+     .lang-switch {
+       display: none;
+     }
+   
+     body {
+       background: white;
+       color: black;
+     }
+   }
   </style>
  <script
   defer
@@ -148,6 +172,9 @@
       <a href="https://linkedin.com/in/nick-boot-93317464" target="_blank" data-umami-event="linkedin-click">LinkedIn</a> · 
       <a href="https://github.com/NickBootOne" target="_blank" data-umami-event="github-click">GitHub</a>
     </div>
+    <button class="print-btn" onclick="window.print()" data-umami-event="print-pdf">
+     🖨️ Download as PDF
+    </button>
   </header>
 
   <main>
